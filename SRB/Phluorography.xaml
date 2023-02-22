@@ -1,0 +1,23 @@
+﻿<Window x:Class="SRB.Phluorography"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SRB"
+        mc:Ignorable="d"
+        Title="Phluorography" Height="450" Width="406">
+    <Grid Background="#FFD6F1E6">
+        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Height="50" Source="/ICON.png" Stretch="Fill" RenderTransformOrigin="-4.563,0.13" OpacityMask="Black" Margin="69,9,0,0"/>
+        <Label Content="ГАУЗ Атнинская ЦРБ" HorizontalAlignment="Left" FontFamily="Bahnschrift Light" FontSize="16" Margin="129,9,0,401" OpacityMask="Black"/>
+        <Label Content="программа учета флюорографии" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" OpacityMask="Black"/>
+        <Label Content="Район:" HorizontalAlignment="Left" Margin="58,154,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18"/>
+        <TextBox x:Name="region" HorizontalAlignment="Left" Margin="129,157,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="243" FontSize="20"/>
+        <Label Content="Улица:" HorizontalAlignment="Left" Margin="58,197,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18" RenderTransformOrigin="1.483,0.721"/>
+        <TextBox x:Name="street"  HorizontalAlignment="Left" Margin="129,200,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="243" FontSize="20"/>
+        <Label Content="Дата:" HorizontalAlignment="Left" Margin="68,244,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18" RenderTransformOrigin="1.483,0.721"/>
+        <TextBox x:Name="street_Copy"  HorizontalAlignment="Left" Margin="129,247,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="243" FontSize="20"/>
+        <Button x:Name="getFluor" Content="отметить" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift SemiCondensed" Width="194" Height="37" Background="#FF99E8D4"/>
+        <Label x:Name="patient" Content="пациент" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Bahnschrift SemiBold Condensed" Width="76"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="SRB.Specialist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SRB"
+        mc:Ignorable="d"
+        Title="Specialist" Height="450" Width="800">
+    <Grid Background="#FFD6F1E6">
+        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Height="50" Source="/ICON.png" Stretch="Fill" RenderTransformOrigin="-4.563,0.13"/>
+        <Label Content="ГАУЗ Атнинская ЦРБ" HorizontalAlignment="Left" FontFamily="Bahnschrift Light" FontSize="16" Margin="60,0,0,409"/>
+        <Label Content="программа учета флюорографии" HorizontalAlignment="Left" Margin="60,25,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed"/>
+        <Button x:Name="exit" Content="ВЫХОД" HorizontalAlignment="Right"  VerticalAlignment="Top" FontSize="24" FontFamily="Bahnschrift Light Condensed" Width="132" Margin="0,9,10,0" Background="#FFFCB0B0" Click="exit_Click"/>
+
+        <Button x:Name="newPatient" Content="добавить пациента" HorizontalAlignment="Left" Margin="171,363,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift Light" Width="214" Height="42" Background="#FFE7FFFE" Click="newPatient_Click"/>
+        <ListBox  x:Name="patientsList" Margin="28,90,400,122" SelectionChanged="patientsList_SelectionChanged" ButtonBase.Click="spisok_Selected" IsSynchronizedWithCurrentItem="False" />
+
+
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="461,61,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18"/>
+        <TextBox x:Name="lastName" HorizontalAlignment="Left" Margin="567,64,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="187" FontSize="20"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="503,104,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18" RenderTransformOrigin="1.483,0.721"/>
+        <TextBox x:Name="name"  HorizontalAlignment="Left" Margin="567,107,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="187" FontSize="20"/>
+        <Label Content="Отчество:" HorizontalAlignment="Left" Margin="461,149,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18"/>
+        <TextBox x:Name="patronymic" HorizontalAlignment="Left" Margin="567,152,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="187" FontSize="20"/>
+        <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="409,191,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18" RenderTransformOrigin="1.483,0.721"/>
+        <TextBox x:Name="dateOfBirth"  HorizontalAlignment="Left" Margin="567,197,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="187" FontSize="20"/>
+        <Label Content="Полис:" HorizontalAlignment="Left" Margin="486,237,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18"/>
+        <TextBox x:Name="enp" HorizontalAlignment="Left" Margin="567,240,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="187" FontSize="20"/>
+        <Label Content="Прошел?" HorizontalAlignment="Left" Margin="461,283,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight" FontSize="18" RenderTransformOrigin="1.483,0.721"/>
+        <Button x:Name="savePatient" Content="сохранить изменения" HorizontalAlignment="Left" Margin="409,363,0,0" VerticalAlignment="Top" Background="#FFE7FFFE" FontSize="20" Width="214" Height="42" Click="savePatient_Click_1"/>
+        <TextBox x:Name="info" HorizontalAlignment="Left" Margin="567,286,0,0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiLight" VerticalAlignment="Top" Width="187" FontSize="20"/>
+
+    </Grid>
+</Window>
